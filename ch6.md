@@ -1,19 +1,18 @@
-# 核心系统：现金
+# Core System: Cash
 
-* 类型：推模式
-* 所有权：无
-* 监管：美国法律，美联储银行规章
-* 支付网络经济：ATM取现需付给网络手续费
+* Type: Push Model
+* Ownership: None
+* Regulation: U.S. Law, Federal Reserve Bank Regulations
+* Payment Network Economy: ATM withdrawals incur network fees
 
-在许多方面，现金是美国最简单的支付系统。 作为一种自我清算的“推”支付系统，它没有开放系统或闭环系统的复杂性。 这是一个基于非帐户的系统：收款人和付款人都无需与提供者建立任何类型的帐户或服务关系即可使用它。 它是一个虚拟的支付系统，没有人拥有它，也没有人为现金编写“规则”。 有趣的是，它是付款人和收款人都可以匿名使用的唯一付款方式。 也许由于这种简单性，它既是最常用的付款方式，也常常是最难理解的付款方式。 在本章中，我们将探讨现金如何进入经济，现金使用和流通所涉及的内容以及谁从系统中获利。
+In many ways, cash is the simplest payment system in the United States. As a self-clearing "push" payment system, it lacks the complexity of open-loop or closed-loop systems. It is a non-account-based system: both payees and payers can use it without establishing any type of account or service relationship with the provider. It is a virtual payment system that no one owns, and no one writes "rules" for cash. Interestingly, it is the only payment method that both payers and payees can use anonymously. Perhaps due to this simplicity, it is both the most commonly used payment method and often the most difficult to understand. In this chapter, we will explore how cash enters the economy, the content involved in cash use and circulation, and who benefits from the system.
 
-## 现金量级
+## Cash Magnitude
 
-没有人真正知道美国经济中现金交易的真实数量。 （最近，由旧金山联邦储备银行）已经对美国消费者通过现金付款的数量进行了估算。 但是显然没有办法系统地计算人与人之间的交易。 对于小型企业或个人企业的许多付款，以及支付给临时或“账外”员工的现金工资，也是如此。 当然，犯罪经济中大量使用现金。 最后，一些经济学家估计，美国生产的现金中有多达60％实际上是在海外持有的。
+No one really knows the true volume of cash transactions in the U.S. economy. (Recently, the Federal Reserve Bank of San Francisco) has estimated the number of cash payments made by U.S. consumers. But there is evidently no way to systematically account for transactions between individuals. This is also true for many payments made by small businesses or sole proprietorships, as well as cash wages paid to temporary or "off-the-books" employees. Of course, cash is heavily used in the criminal economy. Finally, some economists estimate that as much as 60% of the cash produced in the U.S. is actually held overseas.
 
-### 大量现金
+### Vast Amounts of Cash
 
-杰森·古德温（Jason Goodwin）在格林贝克（Greenback）关于现金的书中指出：“现存的美钞数量超过任何其他品牌物品，包括可乐罐。”
+Jason Goodwin in his book "Greenback" points out, "There are more U.S. banknotes in existence than any other branded item, including Coca-Cola cans."
 
-## 现金的生产和供给
-
+## Production and Supply of Cash

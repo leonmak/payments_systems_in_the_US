@@ -1,29 +1,30 @@
-# 核心系统：银行卡
+# Core System: Bank Cards
 
-* 类型：有授权的拉模式
-* 所有权：私有网络所有 -- 上市公司
-* 监管：网络规则，美国法律，美联储银行规章
-* 支付网络经济：手续费（收卡行对发卡行），评估（发卡行，收卡行对网络），货币转换
-* 处理流程：电子化
-* 风险管理：银行卡网络定义，处理商和终端用户增强
+* Type: Authorized Pull Model
+* Ownership: Private Network Ownership -- Publicly Listed Company
+* Regulation: Network Rules, U.S. Laws, Federal Reserve Bank Regulations
+* Payment Network Economy: Fees (Acquiring Bank to Issuing Bank), Assessments (Issuing Bank, Acquiring Bank to Network), Currency Conversion
+* Processing Flow: Electronic
+* Risk Management: Bank Card Network Definition, Enhanced Processing for Merchants and End Users
 
-银行卡支付系统使金融服务和许多其他行业的许多人着迷，因为它们是消费者商业的核心，每年可促进数万亿美元的消费者和企业支出。 由于其庞大的规模，广泛的全球覆盖范围，惊人的标准化程度和互操作性，该卡系统尤其重要（使来自堪萨斯州托皮卡的持卡人能够走进新加坡的一家酒吧并购买饮品） ，也许是最重要的一点是，过去几年来流向信用卡发卡行的惊人利润，也流向了支付卡价值链中的其他参与者。
+Bank card payment systems captivate many in the financial services and many other industries as they are at the heart of consumer commerce, facilitating consumer and business spending worth trillions of dollars annually. Due to its vast scale, extensive global coverage, remarkable standardization, and interoperability, the card system is particularly crucial (enabling a cardholder from Topeka, Kansas to walk into a bar in Singapore and purchase a drink), perhaps most importantly, the astounding profits flowing to credit card issuers in recent years have also flowed to other participants in the payment card value chain.
 
-## 历史背景
+## Historical Background
 
-支付卡行业起源于20世纪上半叶的私人百货商店和石油公司的“信用卡”。后来，大来俱乐部和美国运通（American Express）在1950年代发行的收费卡主要用于商务旅行和娱乐（T＆E），建立了早期的“闭环”卡系统。
+The payment card industry originated in the early 20th century with the "charge cards" of private department stores and oil companies. Later, the charge cards issued by Diners Club and American Express in the 1950s were primarily used for travel and entertainment (T&E), establishing early "closed-loop" card systems.
 
-然而，我们今天所知道的银行卡业始于1966年，当时美国银行成立了BankAmerica Service Corporation公司，以将其BankAmericard产品特许权授予其他银行。美国银行在1950年代后期推出了BankAmericard，并计划将其推广到整个加利福尼亚。在1960年代中期，它开始将BankAmericard许可给位于加利福尼亚州以外和其他一些国家的其他银行。到1970年，加盟商开始为该产品寻求一种新的组织结构，从而组建了National BankAmericard Inc.（NBI）来管理美国信用卡计划。在1970年代中期，成立了一个类似的组织来管理国际卡计划。此后不久，这两个组织成立了一家名为Visa的新公司，国际组织（IBANCO）成为Visa International，NBI成为Visa USA，是Visa International的集团成员。
+However, what we know today as the bank card industry began in 1966 when Bank of America established BankAmerica Service Corporation to license its BankAmericard product to other banks. Bank of America introduced BankAmericard in the late 1950s and planned to expand it throughout California. By the mid-1960s, it began licensing BankAmericard to other banks outside California and in some other countries. By 1970, affiliates sought a new organizational structure for the product, leading to the formation of National BankAmericard Inc. (NBI) to manage the U.S. credit card program. In the mid-1970s, a similar organization was established to manage the international card program. Shortly thereafter, these two organizations formed a new company called Visa, with the international organization (IBANCO) becoming Visa International and NBI becoming Visa USA, a member of Visa International's group.
 
-另外，在与美国银行卡计划的竞争中，另一批加利福尼亚银行组成了一个竞争组织，称为银行间卡协会（ICA）。 ICA创建了Master Charge：Interbank卡，并在1979年将其自身和产品更名为Mastercard。
+Additionally, in competition with the Bank of America card program, another group of California banks formed a competing organization called the Interbank Card Association (ICA). The ICA created Master Charge: Interbank Card and in 1979 renamed itself and its product to Mastercard.
 
-这些成立为成员制金融机构协会的新公司所做的早期工作非同凡响。他们建立了开放式金融机构会员资格的原则，即通过协会章程和运营规则进行开放式交换交易，手续费和品牌控制，随着时间的流逝，这些规则将不断发展，定义卡支付系统。
+The early work done by these newly formed member-based financial institution associations was remarkable. They established principles of open financial institution membership, allowing for open exchange of transactions, fees, and brand control through association bylaws and operating rules. Over time, these rules continued to evolve, defining the card payment system.
 
-值得注意的是，这些规则为互操作性奠定了基础，随着其他国家/地区的信用卡系统的发展，互操作性迅速在全球范围内发展，并与Visa和Mastercard系统相连，以扩大其覆盖范围。当然，互操作性主要是技术上的，它为发行，接受和交易管理的各个方面建立协议和时间表，但是卡协会还定义了系统的经济性，品牌管理和交易手续费的需求。
+It is worth noting that these rules laid the foundation for interoperability, which rapidly developed globally as credit card systems in other countries/regions evolved, connecting with the Visa and Mastercard systems to expand their coverage. Interoperability is primarily technical, establishing agreements and timelines for issuance, acceptance, and transaction management aspects, but the card associations also defined the system's economics, brand management, and transaction fee requirements.
 
-随着时间的流逝，卡协会在管理卡欺诈中起着重要作用-要求发行人向协会报告已确认的欺诈，并使用已确认的欺诈“结果数据”来构建日益完善的数据分析系统以帮助应对。
+Over time, the card associations played a significant role in managing card fraud - requiring issuers to report confirmed fraud to the association and using confirmed fraud "outcome data" to build increasingly sophisticated data analysis systems to help combat it.
 
-协会还建立了仲裁程序以解决成员之间的争端，以确保任何此类争端都将在“家庭内部”得到解决，并由协会的工作人员担任法院，法官和陪审团的角色。
+The associations also established arbitration procedures to resolve disputes among members, ensuring that any such disputes would be resolved "in-house" and overseen by association staff acting as courts, judges, and juries.
 
-### 成员制
+### Membership-Based
+
 

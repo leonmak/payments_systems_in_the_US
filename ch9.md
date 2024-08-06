@@ -1,14 +1,13 @@
-# 视角: 系统提供者
+# Perspective: System Providers
 
-本章总结了两章关于参与支付系统的利益相关者的章节。 在上一章中，我们探讨了支付系统的用户，特别是支付系统中流动资金的发送者和接收者。
+This chapter summarizes the two chapters on stakeholders in the payment system. In the previous chapter, we discussed the users of the payment system, especially the senders and receivers of funds in the payment system.
 
-在本章中，我们着眼于支付系统中的服务提供者：银行，网络和清算所以及处理者（它们在支付系统中扮演着幕后的主要角色）。
+In this chapter, we focus on the service providers in the payment system: banks, networks, clearinghouses, and processors (they play key roles behind the scenes in the payment system).
 
-## 银行视角
+## Bank Perspective
 
-从历史上看，银行拥有并控制着美国的主要支付系统。 消费者和企业通过其作为银行客户的角色来使用支付系统。 银行也是支付系统的主要直接经济受益者。
+Historically, banks have owned and controlled the major payment systems in the United States. Consumers and businesses use the payment system through their roles as bank customers. Banks are also the primary direct economic beneficiaries of the payment system.
 
-但是，银行在这一领域的地位一直在变化，一些支付系统不再由银行拥有，非银行参与者也扮演着重要的角色。
+However, the position of banks in this field has been changing, with some payment systems no longer owned by banks, and non-bank participants playing significant roles.
 
-### 银行细分
-
+### Bank Segmentation

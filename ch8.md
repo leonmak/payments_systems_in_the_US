@@ -1,18 +1,17 @@
-# 视角：系统用户
+# Perspective: System Users
 
-本章开始了两章关于参与支付系统的利益相关者的章节。 首先，我们将探讨用户的角度-查看对于任何支付系统中流动的资金的发送者和接收者来说最重要的是什么。 在这里，我们将研究传统的消费者和商人利益相关者，并研究企业，包括商家，开票人，政府和非营利组织。
+This chapter begins the two chapters on stakeholders involved in the payment system. First, we will explore the perspective of users - what is most important for both senders and receivers of funds flowing through any payment system. Here, we will examine traditional consumer and merchant stakeholders, as well as businesses including merchants, billers, governments, and non-profit organizations.
 
-在下一章中，我们将从各个付款系统的提供者的角度继续研究，包括银行，网络和清算所，处理者以及在支付系统中发挥启用和运行支付系统的如此重要作用的支付服务提供者。
+In the next chapter, we will continue to study from the perspective of providers of various payment systems, including banks, networks and clearinghouses, processors, and payment service providers that play such a crucial role in enabling and operating payment systems.
 
-## 消费者视角
+## Consumer Perspective
 
-美国目前有超过3.21亿人居住，美国拥有世界第三大人口，但它仅占世界总人口的4.5％。人口普查局预计，到2050年，美国人口将达到4.39亿。中国（19.7％）和印度（17.2％）分别是美国的几倍，印度尼西亚排名第四（3.4％），仅次于美国。
+The United States currently has a population of over 321 million residents, ranking as the third most populous country in the world, but accounting for only 4.5% of the world's total population. The Census Bureau projects that by 2050, the U.S. population will reach 439 million. China (19.7%) and India (17.2%) are several times larger than the U.S., with Indonesia ranking fourth (3.4%), just behind the U.S.
 
-美国由超过1.15亿个家庭组成，其中约有8700万拥有传统的银行帐户。大约有1000万个家庭，或1700万成人，组成一个通常称为“无银行账户”的群体。 FDIC称，另有2000万个家庭（4500万成年人）的“资金不足”。
+The U.S. is comprised of over 115 million households, of which around 87 million have traditional bank accounts. Approximately 10 million households, or 17 million adults, make up a group commonly referred to as "unbanked." The FDIC states that an additional 20 million households (45 million adults) are "underbanked."
 
-使用FDIC的定义，“无银行帐户”是指很少（如果有的话）在传统金融系统中的被保管存款机构中拥有支票，储蓄或“其他类型的交易或支票兑现帐户”的人。另一方面，“资金不足”的人拥有银行或信用合作社帐户，但也依赖于其他的支付和金融服务，包括支票兑现服务，发薪日贷款和汇票购买。
+By the FDIC's definition, "unbanked" refers to individuals who have little to no access to checking, savings, or "other types of transaction or check-cashing accounts" at insured depository institutions in the traditional financial system. On the other hand, the "underbanked" have bank or credit union accounts but also rely on other payment and financial services, including check-cashing services, payday loans, and money orders.
 
-从支付系统的角度来看，银行业着眼于消费者通过“家庭”的镜头，基本的存款账户通常由户主们共同拥有。
+From the perspective of the payment system, the banking industry focuses on consumers through the lens of "households," with basic deposit accounts typically jointly owned by household heads.
 
-### 消费者支付行为的迁移
-
+### Migration of Consumer Payment Behavior

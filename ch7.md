@@ -1,21 +1,20 @@
-# 核心系统：电汇
+# Core System: Wire Transfer
 
-* 类型：推模式
-* 所有权：Fedwire-美联储银行，CHIPS-清算所
-* 监管：美联储银行规章，私有网络规则
-* 支付网络经济：平价清算
-* 处理流程：电子化，实时
-* 风险管理：网络，处理商和终端用户
+* Type: Push Model
+* Ownership: Fedwire - Federal Reserve Banks, CHIPS - Clearing House
+* Regulation: Federal Reserve Bank Regulations, Private Network Rules
+* Payment Network Economy: Par Value Clearing
+* Processing Flow: Electronic, Real-time
+* Risk Management: Network, Processing Merchants, and End Users
 
-电汇系统在美国的支付系统中承担大量的金钱。 美国电汇系统及其在世界范围内的对应系统也被称为“大额交易系统”，旨在处理企业之间（尤其是金融机构之间）的非常高价值的交易。
+Wire transfer systems play a significant role in the payment systems in the United States. The U.S. wire transfer system and its corresponding systems worldwide are also known as "large-value transfer systems," designed to handle very high-value transactions between businesses, especially financial institutions.
 
-与大多数工业化国家不同，美国拥有两个这样的系统：Fedwire和CHIPS。 重要的第三种系统SWIFT不是支付系统，而是全球金融服务消息传递系统，通常与大价值系统结合使用。
+Unlike most industrialized countries, the United States has two such systems: Fedwire and CHIPS. The important third system, SWIFT, is not a payment system but a global financial services messaging system, often used in conjunction with large-value systems.
 
-### 赫斯塔特风险的传承
+### Herstatt Risk Inheritance
 
-1974年，一天之内，德国赫斯特（Herstatt）银行倒闭，在全球范围内造成了巨大损失，并导致了一系列银行倒闭。 这种风险被称为“赫尔斯塔特风险”，导致了全球RTGS和CLS（连续链接结算）系统的发展。
+In 1974, the collapse of Germany's Herstatt Bank in a single day caused massive losses globally and led to a series of bank failures. This risk, known as "Herstatt risk," prompted the development of global RTGS and CLS (Continuous Linked Settlement) systems.
 
-在过去的20年中，全世界大多数大额系统都经过了修改，成为实时总结算（RTGS）系统。 这些系统没有使用纸张和电子消费系统所特有的“净额结算”流程，而是实时实时地对每笔交易进行结算。 为了避免与潜在的银行倒闭相关的风险，这一总结算是必不可少的。 每天有数千亿美元，有时甚至数万亿美元的美元转账，即使一天中只有一家成员银行倒闭，一个净结算系统将使网络（网络所有者也是如此）面临无法承受的风险。
+Over the past 20 years, most large-value systems worldwide have been modified to become Real-Time Gross Settlement (RTGS) systems. These systems do not use the "net settlement" process typical of paper and electronic consumer systems but settle each transaction in real-time. This gross settlement is essential to avoid risks associated with potential bank failures. With billions, sometimes even trillions, of dollars transferred daily, even if only one member bank fails in a day, a net settlement system would expose the network (including network owners) to unbearable risks.
 
-## 量级
-
+## Magnitude

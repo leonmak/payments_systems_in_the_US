@@ -1,346 +1,336 @@
-# 核心系统：支票
+# Core System: Checks
 
-* 类型：拉模式
-* 所有权：没有单一拥有者，支票清算所是银行或私有处理商拥有
-* 监管：美国法律，支付网络规则，美联储银行规章
-* 支付网络经济：按面值清算
-* 处理流程：银行类用图像识别或纸质清算；批处理
-* 风险管理：中间商和终端用户管理
-
-&nbsp;
-## 历史背景
-
-美国的支票系统是我们最古老的系统，也是我们使用最广泛的开放支付系统之一。我们今天所知道的支票系统的起源可以追溯到中世纪，也许是更早的时期。许多经济体开发了某种版本的文件，允许将资金从一家银行转移到另一家银行。该词本身来自阿拉伯语şakk。有许多相关的支付订单文件，包括汇票，票据，汇票和信用证，以及专门的支票形式，例如柜台支票，合格支票和银行支票。
-
-支票被视为可转让票据。它指示银行从存款金融机构的支票帐户中支出资金，并将这些资金提供给支票上指定的人或机构。作为可转让票据，支票可以从一个人转移到另一个人。在美国，支票是由银行和其他具有监管权限的银行和其他金融机构提供的服务，用于操作活期存款帐户（DDA），即我们所称的支票帐户的正式名称。
-
-如今，美国支票系统是一种高度自动化的手段，可将资金从一个终端用户转移到另一方。尽管支票交易是从一张纸开始的，但当今几乎所有的支票处理都是电子的。这种电子处理与非常高的交易量相结合，使单位成本相对较低。
-
-向其银行出示或存入支票的客户对银行造成了问题。 支票是对一个帐户（通常在另一家银行）的索偿。 消费者的银行如何从另一家银行收取资金？ 从历史上看，这一过程称为双边结算。 存款银行将向另一家银行发送信使； 信使会出示支票并收取资金（可能是黄金，现金或钞票）作为回报。
-
-从美国早期开始，检查系统的发展可以分为三个重要阶段，所有这些阶段均以清算和结算方法的进步为标志。
+* Type: Pull Mode
+* Ownership: No single owner, check clearinghouse owned by banks or private processors
+* Regulation: U.S. law, payment network rules, Federal Reserve banking regulations
+* Payment Network Economy: Settlement by face value
+* Processing Flow: Banks use image recognition or paper clearing; batch processing
+* Risk Management: Intermediaries and end-users management
 
 &nbsp;
+## Historical Background
 
-## 第一阶段：清算所的发展
+The check system in the United States is one of our oldest systems and one of the most widely used open payment systems. The origins of the check system we know today can be traced back to the Middle Ages, perhaps even earlier. Many economies developed some version of a document that allowed funds to be transferred from one bank to another. The word itself comes from the Arabic word şakk. There are many related payment order documents, including drafts, bills, promissory notes, and letters of credit, as well as specialized forms of checks such as cashier's checks, certified checks, and bank checks.
 
-在美国的18世纪和19世纪，银行的数量以及开出的支票的数量在增长，这使得双边清算和结算的过程变得越来越繁琐。邮差携带了几袋支票，要交给其他银行；从交换所收到的现金或其他物品也可能会被盗。
+Checks are considered negotiable instruments. They instruct a bank to pay funds from the depositor's checking account and provide those funds to the person or entity specified on the check. As negotiable instruments, checks can be transferred from one person to another. In the United States, checks are a service provided by banks and other regulated financial institutions for operating demand deposit accounts (DDAs), formally known as checking accounts.
 
-1853年，第一家支票结算所在纽约市成立。银行加入了支票清算所，并在每个银行工作日将存入其他成员银行的支票汇入银行。支票清算所促进了银行之间有序的支票交换，并且重要的是，计算了每家银行的每日净结算额。然后，银行为他们的结算帐户提供资金或从中提取资金。很快，在其他主要城市也建立了类似的支票清算所，以及在城市间，区域和国家间的支票清算所。
+Today, the U.S. check system is a highly automated means of transferring funds from one end-user to another. While check transactions start on paper, almost all check processing today is electronic. This electronic processing, combined with very high transaction volumes, results in relatively low unit costs.
 
-成立于20世纪初的联邦储备银行系统发挥了重要作用，要求其全国各地的成员银行接受面值的存款支票。这意味着存款银行将向其客户贷记“ 1美元兑1美元”，而不是较低的百分比。美联储的要求，加上全国各地支票清算所的发展，使支票变成了真正的国民支付系统。
+Customers presenting or depositing checks at their banks pose a problem for the banks. A check is a claim on an account (usually at another bank). How does a consumer's bank collect funds from another bank? Historically, this process was known as bilateral settlement. The deposit bank would send a messenger to the other bank; the messenger would present the check and collect funds (which could be gold, cash, or notes) in return.
+
+From the early days of the United States, the development of the check system can be divided into three significant stages, all marked by advancements in clearing and settlement methods.
 
 &nbsp;
 
-## 第二阶段：自动化 — MICR和分选器
+## Phase One: Development of Clearinghouses
 
-在1950年代末和1960年代初，引入并广泛使用借助MICR（磁性墨水字符识别）字符，可以进行高速检查处理。 MICR字符（用于识别支票所在的银行和帐户）出现在支票的底部。 支票金额是在支票生成后添加的，通常由第一笔存款的银行在称为编码的过程中添加。 双方的银行以及清算中心和处理商都使用支票分类器，来读取的MICR行，并将单个支票放入箱中。 当每张支票流经分拣器时，它们通常还会捕获每张支票两面的图像。
+In the 18th and 19th centuries in the United States, the number of banks and the number of checks being issued were increasing, making the bilateral clearing and settlement process increasingly cumbersome. Mail carriers carried bags of checks to be delivered to other banks; cash or other items received from the exchange could also be stolen.
 
-其他发展进一步促进了全国范围的自动支票处理。 存管金融机构使用统一的银行编号方案（美国银行业协会分配的转接路线编号）是一个重要因素。 禁止州际银行业务的法律逐渐解散，导致许多大型的国家和地区银行专注于“on-us”的更广泛定义：许多银行首次发现自己是多个票据交换所的成员。 大规模航空运输服务的出现减少了对代理行的处理链的麻烦。 为小型银行服务的处理商开发了“on-we”支票清算功能，在某种程度上模仿了国家银行的多状态支票处理能力。
+In 1853, the first check clearinghouse was established in New York City. Banks joined the check clearinghouse and each bank would present checks deposited by other member banks on each banking day. The check clearinghouse facilitated orderly check exchange between banks, and importantly, calculated the daily net settlement amount for each bank. Banks would then provide or draw funds from their settlement accounts. Soon, similar check clearinghouses were established in other major cities, as well as intercity, regional, and interstate check clearinghouses.
 
-### 假如？
-
-如果支票系统朝另一个方向发展，而是采用折扣（而非面值）清算和结算模型，则该系统看起来很像我们基于交换的卡支付系统。收到100美元支票的商户可以将支票存入其银行，这会将其帐户中的98美元记入贷方。然后，银行将把支票交给消费者的银行，并收到$ 98的信用额。消费者的银行会从其客户的帐户中扣除$ 100，其余的$ 2作为交易利润。
-
-一些行业观察家建议，美联储对借记卡交易施加类似的“面值”模型，类似于支票，除了“良好资金”和卡提供的欺诈担保。美联储没有被劝说这样做，导致加大了游说力度，以确保按照这些方针进行立法。作为《多德-弗兰克法案》一部分的《杜宾修正案》的通过
-国会在2008年通过的法案可能受到了这些努力的影响。
+The establishment of the Federal Reserve System in the early 20th century played a crucial role, requiring its member banks across the nation to accept deposit checks at face value. This meant that the deposit bank would credit its customer's account "1 dollar for 1 dollar" rather than at a lower percentage. The Fed's requirement, along with the development of check clearinghouses nationwide, turned checks into a truly national payment system.
 
 &nbsp;
 
-## 第三阶段：图像化
+## Phase Two: Automation — MICR and Sorters
 
-尽管MICR和支票分类设备可以自动进行支票交换，但是银行仍然必须管理和存储纸质支票。这对银行造成了特别的负担，必须保留每张实物支票，并经常将其与月结单一起退还给开票行。链中的其他人员，包括存款银行，中介银行和加工商，可能需要查看纸质支票才能解决纠纷或查询，从而导致繁琐而昂贵的工作。当成像技术在1980年代末期和1990年代末开始成熟时，银行发现了降低内部使用成本的机会，对于存储支票和取回支票以供查询。银行开始在他们的支票分类机上添加摄像头，以捕获每张通过机器的文件的图像。
+In the late 1950s and early 1960s, the introduction and widespread use of Magnetic Ink Character Recognition (MICR) characters enabled high-speed check processing. MICR characters (used to identify the bank and account where the check is drawn) appeared at the bottom of checks. The check amount was added after the check was generated, typically by the bank of first deposit during a process called encoding. Both banks as well as clearing centers and processors used check sorters to read the MICR line and sort individual checks into bins. As each check passed through the sorter, they would often capture images of both sides of the check.
 
-银行花费了十多年的时间来投资和学习使用图像技术，主要用于存档目的。使用图像进行清除（交换图像而不是纸张）是一种逻辑扩展。在此期间，银行家通过不同的小组一起工作，以探索“电子支票”和“支票截断”。一些大型银行确实交换了图像。其他人则使用私有的多方协议交换了MICR线路数据文件以进行发布，并随后进行了物理检查。无论哪种情况，基本法律仍然要求使用原始纸质支票向支票开立人的银行出具汇票。这极大地阻碍了通过图像进行清除的工作，因为如果发生纠纷，查询或错误，沿线的任何地方的银行都可能需要使用原始的纸质支票。
+Further developments facilitated nationwide automated check processing. The use of a uniform bank numbering scheme by depository financial institutions (assigned by the American Bankers Association as routing transit numbers) was a significant factor. Laws prohibiting interstate banking gradually dissolved, leading many large national and regional banks to focus on a broader definition of "on-us": many banks found themselves members of multiple check exchange facilities for the first time. The advent of large-scale air transportation services reduced the hassle of processing chains for correspondent banks. Processors developed "on-we" check clearing capabilities for smaller banks, somewhat mimicking the multi-state check processing capabilities of national banks.
 
-2004年10月生效的《 21世纪支票清算法案》（Check 21）解决了这个问题。 Check 21是由联邦储备银行提出并赞助的，他希望该行业转向电子结算，但不希望强制这样做。
+### What If?
 
-### 禁飞的飞机
+If the check system had evolved in a different direction, adopting a discount (rather than face value) clearing and settlement model, the system would look much like our exchange-based card payment systems. A merchant receiving a $100 check could deposit the check in their bank, crediting their account with $98. The bank would then present the check to the consumer's bank and receive a credit of $98. The consumer's bank would debit $100 from their customer's account, keeping the remaining $2 as transaction profit.
 
-2001年9月11日的事件经常被认为是美联储采取行动支持Check 21法的原因。在袭击发生后的几天里，当飞机没有飞行并且支票没有移动时，美联储（在技术上充当支票处理的代理行，出示给美联储的支票被存入出示行在美联储的的账户）的浮存达到了警戒的水平，因为美联储（Fed）无法向支付行出示支票。实际上，美联储在一段时间内一直在积极致力于推动Check 21类型的法律：9/11推动了这一法律的向前发展。
-
-Check 21法律没有强制要求清除图像，而是仅声明原始支票的打印副本（“替代支票”或“图像替换文件” -IRD）在法律上等同于原始纸质支票。
-
-银行可能仍拒绝接受图像，但必须接受图像的打印副本。实际上，这意味着实际上与支票发行人的银行相距甚远的存款银行可以将图像（通常通过票据交换所）发送到支票发行人的银行附近的打印机；纸质打印可以代表存款银行。
-
-在当今的美国，支票支付系统几乎完全是电子的，因为事实证明，图像化是提高支票收集速度，降低风险并降低运营成本的重要进步。
-
+Some industry observers suggested that the Fed impose a similar "face value" model on debit card transactions, akin to checks, but with the added benefit of "good funds" and fraud protection provided by cards. The Fed was not persuaded to do so, leading to increased lobbying efforts to ensure legislation followed these guidelines. The passage of the Durbin Amendment as part of the Dodd-Frank Act in 2008 by Congress may have been influenced by these efforts.
 
 &nbsp;
 
-## 角色与价值链
+## Phase Three: Imaging
 
-支票支付系统最基本的涉及三个方面：支票书写者，支票接收人以及存入支票的银行。 如果（最典型的情况）支票写信人和收款人使用不同的银行，则有四个参与方。 支票价值链如下图所示：
+While MICR and check sorting equipment could automate check exchange, banks still had to manage and store paper checks. This posed a particular burden for banks, having to retain physical checks and frequently return them along with statements to the drawee bank. Others in the chain, including depositary banks, intermediary banks, and processors, might need to view paper checks to resolve disputes or inquiries, leading to cumbersome and costly work. As imaging technology matured in the late 1980s and late 1990s, banks found an opportunity to reduce internal costs for storing and retrieving checks for inquiries. Banks began adding cameras to their check sorting machines to capture images of each document passing through the machine.
+
+The bank has spent over a decade investing in and learning to use image technology, primarily for archival purposes. Using images for clearing (exchanging images instead of paper) is a logical extension. During this time, bankers worked together in different groups to explore "electronic checks" and "check truncation." Some large banks did exchange images. Others used private multilateral agreements to exchange MICR line data files for presentment and then conducted physical checks. In either case, the basic law still requires the issuance of a check to the bank of the check issuer using the original paper check. This greatly hinders the work of clearing through images, as any bank along the line may need to use the original paper check in case of disputes, queries, or errors.
+
+The Check Clearing for the 21st Century Act, which took effect in October 2004, addressed this issue. Check 21 was proposed and sponsored by the Federal Reserve, which wanted the industry to move towards electronic settlement but did not want to mandate it.
+
+### Grounded Aircraft
+
+The events of September 11, 2001, are often seen as the reason the Federal Reserve took action to support the Check 21 Act. In the days following the attacks, when planes were grounded and checks were not moving, the Federal Reserve (acting as the agent for check processing, with checks presented to the Fed being deposited in the presenting bank's account at the Fed) reached alert levels as it could not present checks to paying banks. In fact, the Fed had been actively pushing for laws like Check 21 for some time: 9/11 propelled the advancement of this law.
+
+The Check 21 Act did not mandate clearing through images but simply declared that printed copies of the original checks ("substitute checks" or "image replacement documents" - IRD) are legally equivalent to the original paper checks.
+
+Banks may still refuse to accept images but must accept printed copies of images. In practice, this means that a deposit bank located far from the check issuer's bank can send images (usually through a clearinghouse) to a printer near the check issuer's bank; the paper printout can stand in for the deposit bank.
+
+In today's America, the check payment system is almost entirely electronic, as imaging has proven to be a significant advancement in speeding up check collection, reducing risks, and lowering operational costs.
+
+&nbsp;
+
+## Roles and Value Chain
+
+The most basic aspects of the check payment system involve three parties: the check writer, the check recipient, and the bank where the check is deposited. If (in the most typical scenario) the check writer and the payee use different banks, there are four parties involved. The check value chain is illustrated in the following diagram:
 
 ![](.gitbook/assets/ch3a.png)
 
+### Checks: Our Latest Electronic Payment System
 
-### 支票：我们最新的电子支付系统
+The impact of Check 21 is remarkable. Most banks began serious implementation of check image clearing from 2007. By early 2010, the Federal Reserve announced that 99% of check clearings processed through the Fed were done electronically.
 
-Check 21的结果令人瞩目。大多数银行从2007年开始认真执行支票图像清算。到2010年初，美联储宣布99％的通过美联储进行的支票清算均以电子方式进行处理。
+The check issuer's bank provides its customers (whether consumers, businesses, nonprofits, or government entities) with current deposit accounts featuring checks. The check writer's bank provides blank checks to customers or checks with detailed information (routing numbers and account numbers).
 
-支票发行人的银行向其客户（无论是消费者，企业，非营利组织还是政府实体）提供以支票为特征的活期存款帐户。支票书写者的银行向客户提供空白的支票，或为客户提供带详细信息（运输路线编号和帐号）的支票。
+The check writer writes a check, specifying the payee, date, and dollar amount. Writing can be a manual operation like that of a consumer or an automated printing process as done by large corporations.
 
-支票书写者书写支票，指定支票的收款人，日期和美元金额。书写可以是与消费者一样的手动操作，也可以是与大型公司一样通过自动打印过程完成的操作。
+The check writer then sends the check to the recipient. The recipient deposits the check into a bank with a current deposit account. (Alternatively, the recipient can endorse the check and hand it over to a non-bank intermediary acting as the payee of the check.)
 
-然后，支票编写者将支票发送给收件人。收款人将支票存入收款人具有活期存款帐户的银行。 （或者，收款人可以将支票背书，然后交给非银行中介机构，由该中介机构承担支票的收款人的角色。）
+The deposit bank credits its account and makes the funds available to the customer (e.g., for cash withdrawal) based on its fund availability policy. The deposit bank's availability policy is constrained by Federal Reserve Regulation CC, which sets minimum availability for various types of checks. However, many banks offer availability terms much more lenient than what the regulation requires. This is the root of competition among banks, especially for small business check accounts.
 
-存款银行将其帐户记入贷方，并根据其资金可用政策将其存款提供给客户使用（例如提取现金）。 存款银行的存量政策受到美联储CC法规的约束，该法规规定了各种支票的最低存量。 但是，许多银行提供的可用条款比法规要求的要宽松得多。 这是银行之间竞争的根源，特别是对于小型企业的支票账户。
+The complexity of the check payment system arises at this point in the chain when the recipient bank or deposit bank must decide how to clear the check, i.e., how to get the check to the check issuer's bank.
 
-当接收方的银行或存款银行必须决定如何清除支票时，即如何将支票送到支票发行人的银行时，支票支付系统的复杂性就会在链中的这一点上显露出来。
-
-存款银行不受任何法律或法规约束以任何特定方式清算支票-可以通过结算所，通过与该银行的双边结算，通过将清算支票存入代理银行（然后称为“第二笔存款的银行”），或将支票交给处理商，它决定清算方法。
-
-&nbsp;
-
-## 图像化前的清算环境
-
-### 存款行
-
-从历史上看，存款银行会通过评估诸如支票的美元价值，存款时间，到付款银行的距离以及商业航班时间表等问题来做出这些决定。 这些因素之所以重要，是因为付款银行的义务是在实际出示支票时发生。 存款银行必须评估在更快地获得资金（通过快速交付支票）和管理交付成本（通过使用低成本的交付机制）之间的权衡。 将存款银行的展示决策策略输入到支票分类器中，然后该支票分类器将支票项目放入可通过各种方法进行清算的箱中，并发送到各种付款银行。
-
-### 支票系统的巨大价值？
-
-支票的一个鲜为人知的功能是支票编写者不需要知道，传输或存储有关收款人的银行或银行帐号的任何信息的事实。 可以将其视为内置的PCI-DSS兼容性！ 当然，支票编写者正在发送自己的帐户数据（在支票上可见），这会产生另一种潜在的欺诈风险。
-
-### 清算中心
-
-图像化前环境中的大多数支票都是通过清算中心进行的。 清算中心从存款银行收到支票，并附上现金信，基本上是一张存单，显示要出多少张支票以及价值多少。 最典型的是，带到清算中心的支票已经预先装好了，按照每个付款银行分成的袋装或捆装。 交换了支票，然后清算中心为参与清算所的银行计算了净清算总额。 清算中心可以自行执行该结算过程，也可以将其外包给联邦储备银行（运行结算服务）或其他结算提供商。
-
-### 清除复杂性
-
-U.C.C. 4：“收款银行应在考虑相关指示，该物品的性质，这些物品的数量，所涉及的收款成本以及该收款人或其他人通常使用的方法后，以合理迅速的方式发送物品。展示这些项目。”
-
-### 支付银行
-
-支付银行从清算中心接收支票，然后再次将其通过分拣器运行，从而创建交易明细文件，该文件用于将交易过帐到支票编写者的帐户。从历史上看，这些过帐是在银行每晚对DDA系统进行批处理时完成的。如果在运行之后某个帐户没有足够的资金来支付过帐到该帐户的支票，则付款银行可以保留该交易并向客户提供透支贷款，或者拒绝该交易并将其“退回”给存款银行。当然，该决定通常是自动化的，取决于银行DDA系统中编程的政策。如果银行保留支票并维持透支，则透支将成为受制于该机构贷款政策的贷款。
-
-
-### 会合
-
-在几十年前的一些城市中，“支票清算所”不过是一个地方，甚至是停车场，银行同意会面以交换支票袋！
-
-### 盲投
-
-支票和ACH借记（类似支票）交易均以“盲目的”基础过账到客户的帐户中。 意思是说，消费者的银行在过帐之前不会检查帐户中是否有足够的资金。 没有与信用卡或借记卡相同的授权流程。
+The deposit bank is not bound by any laws or regulations to clear checks in any particular way—it can be through a clearinghouse, through bilateral settlement with the bank, by depositing the clearing check into a correspondent bank (then called the "bank of second deposit"), or handing the check to a processor, which decides the clearing method.
 
 &nbsp;
 
-## 图像化清算
+## Pre-Imaging Clearing Environment
 
-### 存款银行
+### Deposit Banks
 
-在图像化处理环境中，存款银行通常将对由另一家银行支付的所有支票成像。 “捕获”支票图像的位置因银行而异。 高度自动化的银行会在存款点捕获(ATM机或分行出纳员的窗口中)。 其他银行则在后台处理中心捕获存款，或将纸质物品交付给处理它们的处理商。 然后，银行（或其处理商）通过某种形式的清算中心或通过转换为ACH，确定是否以与付款银行的某种双边安排形式提供给定项目。 如果转换为ACH，则物料必须符合该交易类型的NACHA规则。
+Historically, deposit banks would make these decisions by evaluating factors such as the dollar value of checks, deposit times, distance to the paying bank, and commercial flight schedules. These factors are important because the obligation of the paying bank occurs when the check is actually presented. The deposit bank must balance the need to obtain funds quickly (through expedited check delivery) and manage delivery costs (by using low-cost delivery mechanisms). The deposit bank's presentment decision strategy is input into a check sorter, which then places check items into bins for clearing through various methods and sends them to various paying banks.
 
-接下来发生的事情在很大程度上取决于相关的存款银行。 根据需要发生的功能来思考更容易，而不是由执行这些功能的实体。 存款银行必须：
+### Huge Value of the Check System?
 
-  * 直接或通过服务商或处理商将图像传送到付款银行
-  * 确保已打印出IRD（图像替换文件）并将其交付给不想接收图像的付款银行
-  * 与付款银行结算
+One little-known feature of checks is that the check writer does not need to know, transmit, or store any information about the payee's bank or bank account. It can be seen as built-in PCI-DSS compliance! Of course, the check writer is sending their account data (visible on the check), which poses another potential fraud risk.
 
-处理商或清算中心可以处理所有或部分这些任务。
+### Clearing Centers
 
-### 图像清算 — 未来
+Most checks in the pre-imaging environment were cleared through clearing centers. The clearing center received checks from deposit banks, along with cash letters, essentially a deposit slip showing how many checks are being presented and for how much. Typically, checks brought to the clearing center were already pre-sorted into bags or bundles by paying bank. Checks were exchanged, and the clearing center calculated the net clearing total for banks participating in the clearing. The clearing center could perform this settlement process internally or outsource it to the Federal Reserve (which operates settlement services) or other settlement providers.
 
-行业内正在讨论许多场景，在某些情况下甚至在实践中。 一种可能的方式是，将来自ATM的支票图像（用于存款）立即动态呈现给付款银行。 如果付款银行采用实时过帐（而不是在夜间批量运行期间等待过帐），则存款银行将立即知道支票是否拒付。 另一种可能性是图像本身不直接呈现给付款银行，而是保存在任何一家银行均可访问的档案中。 在这种情况下，存款银行将简单地将MICR信息以及存档地址发送到付款银行，而付款银行将从该文件中过帐该项目。
+### Simplifying Complexity
+
+U.C.C. 4: "The collecting bank shall send the item by reasonable commercial standards for fair dealing within the time specified in this Article after it receives the item and has had a reasonable time to act on the item, considering the nature of the item, the amount of the item, the collection costs involved, and the usual method of collection of the collecting bank."
+
+### Paying Bank
+
+The paying bank receives the check from the clearinghouse and then runs it through a sorter again to create a transaction detail file that is used to post the transaction to the account of the check writer. Historically, these postings were done when the bank ran its DDA system in batch each night. If an account does not have enough funds to cover the check posted to it after the run, the paying bank can either hold the transaction and offer the customer an overdraft loan or reject the transaction and "return" it to the depositing bank. This decision is typically automated and depends on the policies programmed into the bank's DDA system. If the bank holds the check and maintains the overdraft, the overdraft becomes a loan subject to the institution's lending policies.
+
+### Convergence
+
+In some cities decades ago, a "check clearinghouse" was nothing more than a place, even a parking lot, where banks agreed to meet to exchange bags of checks!
+
+### Blind Posting
+
+Checks and ACH debits (similar to checks) are posted to a customer's account on a "blind" basis. This means that the consumer's bank does not check the account for sufficient funds before posting. There is no authorization process similar to credit or debit cards.
 
 &nbsp;
 
-## 所有权和监管法规
+## Image Clearing
 
-### 所有权
+### Depository Bank
 
-没有哪个实体拥有支票支付系统。 每个银行选择如何支持支票的方式，既包括活期存款帐户上写的支票，也包括存入其帐户上的支票。 银行通常属于一个或多个清算中心，传统上是非营利性的银行所有的合作社。 如今，一些清算中心继续由银行拥有，而其他清算中心则由营利性公司拥有。 向银行提供支票处理的大型处理商在某些功能上类似于清算所。
+In an image processing environment, the depository bank typically images all checks deposited from another bank. The location where the check images are "captured" varies by bank. Highly automated banks capture at the deposit point (ATM or window of a branch teller). Other banks capture deposits in a back-office processing center or deliver the paper items to a processing vendor. The bank (or its vendor) then determines whether to present the item in some form of bilateral arrangement with the paying bank through a clearinghouse or by converting to ACH. If converted to ACH, the item must conform to NACHA rules for that transaction type.
 
-### 图像化清算的图像
+What happens next largely depends on the depository bank involved. It is easier to think about the functions that need to occur rather than the entities performing those functions. The depository bank must:
 
-将银行支票支付的内部处理从纸张转移到电子，使本已非常高效的支付系统变得更加高效。 清除物品所需的时间已大大缩短，现在，有时比ACH或卡片的清除速度更快。 也许最重要的是，全国各地运输支票的成本已基本消除。 现在可以将支票视为一种预先支付的纸质订单-一种一次性付款卡。
+  * Transmit images directly or through a service provider or processor to the paying bank
+  * Ensure IRDs (Image Replacement Documents) have been printed and deliver them to the paying bank that does not wish to receive images
+  * Settle with the paying bank
 
-### 监管法规
+A processor or clearinghouse may handle some or all of these tasks.
 
-支票的监管框架是美国法律，尤其是《统一商法典》。 U.C.C.第3条和第4条指定有关银行存款和收款的规定，以及支票交易中各方的责任。当U.C.C.该法案于1950年代初出版，并被50个州中的每个州采用，它有助于为一般的商业交易（特别是支票）创建统一的法律框架，并降低了该系统的某些法律复杂性。 2004年的Check 21法令是影响支票系统的下一个美国主要法律。如前所述，支票21将替代支票（称为图像替换文件的原始支票的图像的打印副本）作为原始支票的合法等同物。
+### Image Clearing - The Future
 
-美联储作为监管机构，发布实施支票系统的法规。美联储的主要支票法规包括规章J和CC，它们共同规定了有关支票可用性和支票清算其他方面的规定。如果存款银行使用美联储的付款服务来结算支票，则必须遵守美联储的3号操作通告。
+Many scenarios are being discussed within the industry, with some even in practice in certain cases. One possible way is to dynamically present check images (used for deposits) from ATMs to the paying bank immediately. If the paying bank employs real-time posting (instead of waiting for posting during nightly batch runs, for example), the depository bank would know immediately if the check is dishonored. Another possibility is that the image itself is not presented directly to the paying bank but stored in an archive accessible by any bank. In this case, the depository bank would simply send the MICR information and archive location to the paying bank, which would then post the item from that file.
 
-支票结算所具有绑定参与银行的系统规则，管理展示时间，批处理和现金信约定以及其他操作问题。清算中心的规则和卡式支付和ACH支付中的支付系统规则不尽相同-它们不涵盖银行向其客户提供的支票产品的要求。支票和图像处理公司的操作规则在范围上也相似。
+&nbsp;
 
-ECCHO（电子支票结算所组织）是一家非营利性银行合作社（从技术上讲，是一个互惠互利的结算所），它已制定了图像交换规则。双边交换图像的银行或图像清算中心可以选择遵守这些规则；但是，这些规则仅适用于ECCHO成员之间交换的项目。
+## Ownership and Regulatory Framework
 
-## 支票使用，数量和趋势
+### Ownership
 
-由于支票付款系统是如此之大且分散，因此很难确定确切的数量。 美联储定期委托选定银行检查支票数量； 这些用于推算国家级体量。 一些这样的调查着眼于单个项目，以确定对谁是付款人，谁是收款人以及支票的目的的估计。
+No single entity owns the check payment system. Each bank chooses how to support checks, both those written on demand deposit accounts and those deposited to its accounts. Banks typically belong to one or more clearinghouses, traditionally nonprofit bank-owned cooperatives. Today, some clearinghouses continue to be owned by banks, while others are owned by for-profit companies. Large processors that provide check processing to banks are somewhat similar in function to clearinghouses.
 
-支票数量非常大，但在某些细分市场中正在迅速下降。 近期美联储付款研究的数据显示，总体急剧下降，但在某些领域尤其是急剧下降，例如销售点（POS）付款和票据付款，如下表所示。
+### Image Clearing's Impact
+
+Moving the internal processing of bank check payments from paper to electronic has made an already very efficient payment system even more efficient. The time required to clear items has been significantly reduced, sometimes now faster than ACH or card clearings. Perhaps most importantly, the cost of transporting checks across the country has been virtually eliminated. Checks can now be viewed as a pre-paid paper order - a one-time payment card.
+
+### Regulatory Framework
+
+The regulatory framework for checks is U.S. law, particularly the Uniform Commercial Code. Articles 3 and 4 of the U.C.C. specify rules regarding bank deposits and collections and the responsibilities of parties in check transactions. When the U.C.C. was published in the early 1950s and adopted by each of the 50 states, it helped create a uniform legal framework for general commercial transactions, especially checks, and reduced some of the legal complexities of the system. The Check 21 Act of 2004 was the next major U.S. law affecting the check system. As mentioned earlier, Check 21 replaces checks (the original check's image printed as an IRD - Image Replacement Document) as the legal equivalent of the original check.
+
+The Federal Reserve, as the regulatory body, issues regulations implementing the check system. The primary check regulations of the Federal Reserve include Regulation J and CC, which together govern provisions regarding check availability and other aspects of check clearing. If a depository bank uses the Federal Reserve's payment services to clear checks, it must comply with Federal Reserve Operating Circular 3.
+
+Check clearinghouses have system rules binding participating banks, governing presentment times, batch processing, cash letter agreements, and other operational issues. The rules of a clearinghouse and the payment system rules in card payments and ACH payments are not the same - they do not cover requirements for checks provided by banks to their customers. The operational rules of check and image processing companies are also similar in scope.
+
+ECCHO (Electronic Check Clearing House Organization) is a nonprofit bank-owned cooperative (technically a mutual clearinghouse) that has developed rules for image exchange. Banks or image clearinghouses engaging in bilateral image exchange may choose to comply with these rules; however, these rules apply only to items exchanged between ECCHO members.
+
+## Check Usage, Quantity, and Trends
+
+Due to the vast and decentralized nature of the check payment system, it is difficult to determine exact quantities. The Federal Reserve regularly commissions selected banks to inspect check quantities; these are used to estimate national volumes. Some such surveys focus on individual items to estimate who the payee is, who the payee is, and the purpose of the check.
+
+Check quantities are very large but are rapidly declining in certain niche markets. Recent data from the Federal Reserve Payments Study shows a sharp overall decline, but in certain areas, the decline is particularly steep, such as point-of-sale (POS) payments and check payments, as shown in the table below.
 
 ![](.gitbook/assets/ch3b.png)
 
-某些支票不会作为支票支付，而是转换为ACH（请参见[第4章](ch4.md)）。
+Some checks are not paid as checks but are converted to ACH (see [Chapter 4](ch4.md)).
 
+### Transitional Check Regulations
 
-### 过渡中的支票法规
-
-重要的是要注意，随着从纸质支票到图像支票的过渡，适用于纸质支票的法律和法规默认情况下不适用于支票图像交换。 发生争议时，这会给所有各方带来不确定性的风险。 各方之间的图像交换协议是解决这种风险的手段。
-
-&nbsp;
-
-## 支票经济学
-
-美国支票系统的经济性可通过首先查看销售给终端用户的基于支票的产品，然后查看支持这些产品的基础处理和清算基础结构。 尤其是银行，用许多不同的支票产品的收益来抵消支票处理平台的成本。 随着支票的绝对数量下降，更重要的是，支票清算方式从纸张变为电子，处理成本正以令人眼花缭乱的速度变化。
+It is important to note that as the transition from paper checks to image checks occurs, laws and regulations applicable to paper checks do not automatically apply to check image exchange. This can introduce uncertainty and risk for all parties in case of disputes. Image exchange agreements between parties are a means to address this risk.
 
 &nbsp;
 
-## 支票系统产品
+## Check Economics
 
-### 支票帐户 - 消费者和小型企业
+The economics of the U.S. check system can be understood by first looking at check-based products sold to end-users and then examining the underlying processing and clearing infrastructure that supports these products. In particular, banks offset the costs of check processing platforms with the revenues from many different check products. As the absolute number of checks declines, more importantly, the way checks are cleared is shifting from paper to electronic, and processing costs are changing at a dizzying pace.
 
-银行为消费者和小型企业提供支票书写和存款功能，作为捆绑的“支票账户”产品的一部分。写或存入 个人支票 很少单独定价。银行尤其将支票书写视为将存款带入银行的一揽子计划的重要组成部分。对于资金不足而开立的支票，当银行选择不退还时，银行会收取NSF（资金不足）费用；从历史上看，这一直是银行收入的重要来源。小型企业支票帐户的工作方式相同（实际上，通常共享相同的交付平台），但是通常会限制给定月份内可以开立的支票数量，如果超过该数量，则收取交易费用。对于消费者和小型企业而言，银行都将支票视为帐户套餐中的必要组成部分，该套餐可从帐户余额，借记卡手续费和费用中获得的利息收入的价值中获取收入。
+&nbsp;
 
-### 支票帐户—大型企业
+## Check System Products
 
-大型企业为工资单，福利和供应商付款开出支票。 银行为这些企业提供带有交易费用明细表的支票账户。 企业可以使用其帐户中“补偿余额”的值来完全或部分抵消费用（称为“帐户分析”）。 专用支票帐户称为受控支出帐户，用于帮助企业了解和控制针对该帐户显示的支票支票的时间安排。 对于希望优化其现金使用量的公司而言，此信息和控制非常重要，从而可以做出更好的借贷和投资决策。 积极的薪酬欺诈控制（只有支票与企业提供给银行的文件中的支票号和金额匹配，才由银行支付支票）和自动帐户对账是这些帐户的典型支持服务。
+### Checking Accounts - Consumers and Small Businesses
 
-### 密码箱服务 — 企业
+Banks offer check writing and deposit capabilities to consumers and small businesses as part of bundled "checking account" products. Writing or depositing personal checks is rarely priced separately. Banks particularly view check writing as an integral part of a package plan to bring deposits into the bank. For checks written with insufficient funds, banks charge NSF (insufficient funds) fees when they choose not to return them; historically, this has been a significant source of bank revenue. The operation of small business checking accounts is similar (in fact, often sharing the same delivery platform), but there is typically a limit on the number of checks that can be written in a given month, with transaction fees charged for exceeding that limit. For consumers and small businesses, banks consider checks as a necessary component of account packages, deriving revenue from account balances, debit card fees, and interest income earned on fees.
 
-银行和非银行都提供特殊产品，以服务于接受来自消费者或其他企业的支票的企业。
+### Checking Accounts - Large Corporations
 
-零售密码箱服务 旨在处理来自消费者（例如公用事业公司或保险公司）的大量支票。零售密码箱提供商控制着将消费者支票定向到的邮政信箱。提供商每天几次从邮局取回信封，打开信封，对支票进行编码，将其发送到清算处，扫描汇款通知书（消费者将其与支票一起放入信封中），并创建付款文件，企业客户用其更新帐单文件。这是一个高度自动化的且历史上利润较低的业务。对企业客户的价值是加速资金收集和自动数据采集。定价基于每次交易，并收取数据费等。
+Large corporations issue checks for payroll, benefits, and vendor payments. Banks provide these corporations with checking accounts that come with detailed transaction fee statements. Corporations can use the value of the "compensating balance" in their accounts to fully or partially offset costs (referred to as "account analysis"). Dedicated checking accounts known as controlled disbursement accounts help corporations understand and control the timing of checks presented against the account. This information and control are crucial for companies looking to optimize their cash usage, enabling them to make better borrowing and investment decisions. Positive controls for payroll fraud (where checks are only paid by the bank if the check number and amount match what the company provides to the bank) and automated account reconciliation are typical support services for these accounts.
 
-批发密码箱服务与此类似，但重点是从商业客户那里收到的高价值支票。汇入的汇款通知书各有不同（格式由付款客户的支票打印系统确定），从中获取数据的过程自动化程度较低，而且成本较高。传统上，批发密码箱的价值在很大程度上取决于快速清算高价值支票的能力-自动数据捕获是次要的。
+### Lockbox Services - Corporations
 
-图像清除和远程存款支票捕获正在极大地改变这项业务的动力。现在，许多批发密码箱提供商都处理入站ACH付款和入站支票，从而创建有关银行存款和汇款数据馈送的单点信息。定价是基于交易的，通常是按击键输入的，并对数据收取额外费用。
+Both banks and non-banks offer specialized products to serve businesses that receive checks from consumers or other businesses.
 
+Retail lockbox services are designed to handle a large volume of checks from consumers (e.g., utility companies or insurance companies). Retail lockbox providers control the postal boxes to which consumer checks are directed. Providers retrieve envelopes from the post office several times a day, open the envelopes, code the checks, send them for clearing, scan remittance advices (which consumers include in the envelopes with their checks), and create payment files for the business clients to update their billing files. This is a highly automated and historically low-profit business. The value to business clients is in accelerating funds collection and automating data capture. Pricing is transaction-based and includes data fees.
 
-### 远程存款捕获
+Wholesale lockbox services are similar but focus on high-value checks received from commercial clients. Remittance advices vary (determined by the check printing system of the paying client), with a lower degree of automation in the data capture process and higher costs. The value of wholesale lockboxes traditionally depends largely on the ability to clear high-value checks quickly - automated data capture is secondary.
 
-银行向各种规模的消费者和企业提供远程存款捕获（RDC）产品。 随着包括用于捕获支票图像的摄像头在内的移动智能手机技术的出现，RDC的普及率急剧上升，因为它有助于避免前往本地ATM或银行支行进行存款！
+Image clearing and remote deposit capture are significantly changing the dynamics of this business. Many wholesale lockbox providers now handle inbound ACH payments and inbound checks, creating a single point of information feed about bank deposits and remittances. Pricing is transaction-based, typically keyed in, and additional fees are charged for data.
 
-如下所示，这项服务允许收款人扫描并电子存入所收到的支票。
+### Remote Deposit Capture
+
+Banks offer remote deposit capture (RDC) products to consumers and businesses of various sizes. With the emergence of mobile smartphone technology, including cameras for capturing check images, the adoption of RDC has sharply increased as it helps avoid the need to visit local ATMs or bank branches for deposits!
+
+As shown below, this service allows recipients to scan and electronically deposit received checks.
 
 ![](.gitbook/assets/ch3c.png)
 
-RDC提供者承担企业扫描了有效纸质支票的风险。 如果提供者是非银行，则图像将存储在银行中。 无论哪种情况，银行都可以将其作为图像提交清算，或者选择将其转换为替代支票并作为纸质进行清算。 对企业来说，价值是通过不实际存放支票而节省的时间和成本。 提供者在服务支持的扫描设备方面变得越来越灵活。 远程存款捕获通常按固定的单笔交易定价，或者可以简单地捆绑到该帐户的总成本中。
+RDC providers assume the risk that businesses scan valid paper checks. If the provider is a non-bank, the image is stored at the bank. In either case, the bank can submit it for clearing as an image or choose to convert it to a substitute check for paper clearing. For businesses, the value lies in saving time and costs by not physically depositing checks. Providers are becoming increasingly flexible in supporting scanning devices for the service. Remote deposit capture is typically priced per fixed transaction or can be simply bundled into the overall cost of the account.
 
-### 零售商家支票存款服务
+### Retail Merchant Check Deposit Services
 
-从历史上看，大型零售商收到大量支票来支付购买费用。与开票人不同，商家必须在付款时做出接受决定。许多零售商基于在ECR（电子收银机）或具有支票读取功能的终端上读取MICR线，使用自动化系统来决定是否接受支票。决策系统可以简单地使用零售商内部系统中的数据（例如，已知的不良支票书写者的文件），也可以访问外部数据库。零售商可以选择通过提供这些选项的服务提供商来验证支票（确定帐户是否真实且信誉良好），甚至可以保证。
+Historically, large retailers receive a significant number of checks to pay for purchases. Unlike the payee, merchants must make acceptance decisions at the time of payment. Many retailers use automated systems based on reading the MICR line on ECRs (electronic cash registers) or terminals with check-reading capabilities to decide whether to accept checks. The decision system can simply use data from the retailer's internal systems (e.g., a file of known bad check writers) or access external databases. Retailers can choose to validate checks (determine if the account is genuine and in good standing) and even guarantee them through service providers offering these options.
 
-大多数大型零售商系统将支票编码为已收到的支票（放入美元MICR行上的金额）以避免这样做的银行费用。零售商向接受交易的银行或非银行方支付每次交易的存款费。如果零售商使用的是支票担保服务，则提供商会收取固定费用加上价值费用的一定百分比；这使交易的经济性类似于信用卡的。
+Most large retail systems encode checks as received checks (the amount placed on the dollar MICR line) to avoid bank fees for doing so. Retailers pay a deposit fee to the bank or non-bank entity accepting the transaction for each transaction. If the retailer uses a check guarantee service, the provider charges a fixed fee plus a certain percentage of the value fee; this makes the transaction economically similar to a credit card.
 
-零售商家需要确定收到的支票是否将转换为ACH，如果是，则将其以收银机（POP或购买点格式）或后台部门（BOC或后台转换格式）进行转换。 ），转换为图像（远程存款捕获）或以纸张形式保存。 如果转换为ACH，则NACHA规则对可以转换哪种支票类型设置了限制。 一些零售商在内部进行此操作。 其他人将支票交给服务提供商，后者代表他们做出决策，处理和保存交易。
+Retailers need to determine if the received checks will be converted to ACH, and if so, they will convert them at the point of sale (POP or point-of-purchase format) or back-office conversion (BOC or back-office conversion format), convert them to images (remote deposit capture), or keep them in paper form. If converted to ACH, NACHA rules restrict which types of checks can be converted. Some retailers perform this operation internally. Others hand the checks over to service providers who make decisions, process, and store the transactions on their behalf.
 
-随着借记卡的普及，许多零售商家已决定完全停止接受支票。 当然，对支票接受的限制有助于进一步促进消费者使用借记卡。
+With the popularity of debit cards, many retailers have decided to completely stop accepting checks. Of course, restrictions on check acceptance help further promote consumer use of debit cards.
 
-### 其他支票产品 — 消费者
+### Other Check Products - Consumers
 
-消费者从银行或第三方支票打印机（也向银行提供支票库存的公司）购买（或得到）空白支票簿。
+Consumers purchase (or receive) blank checkbooks from banks or third-party check printers (companies that also provide check stock to banks).
 
-没有银行账户的消费者使用非银行账户提供的支票等价物。 支票兑现服务允许消费者通过认可支票兑现服务来兑现支票。 汇票由商店，邮局和其他零售服务提供商出售。
+Consumers without bank accounts use check equivalents provided by non-bank account providers. Check cashing services allow consumers to cash checks through recognized check cashing services. Money orders are sold by stores, post offices, and other retail service providers.
 
-还有许多特殊的消费者支票产品，包括旅行支票，认证支票，出纳支票和银行支票。
+There are many special consumer check products, including traveler's checks, certified checks, cashier's checks, and bank drafts.
 
-### 其他检查产品 — 企业
+### Other Check Products - Businesses
 
-许多小型企业使用会计软件包（例如QuickBooks）来写支票。 软件公司和其他提供商会提供支票库存以使用这些软件包。
+Many small businesses use accounting software packages (such as QuickBooks) to write checks. Software companies and other providers offer check stock for use with these software packages.
 
-一些大型企业使用支票打印机在内部打印支票，该支票打印机从企业的应付帐款和/或薪资系统接收其数据流。 其他人将检查打印服务的过程外包。 这在工资核算应用程序中尤为常见，该服务管理工资核算的多个方面（税金计算，退休金等）。 此类服务还管理企业的ACH工资支付。
-
-
-&nbsp;
-
-## 支票清算和基础设施经济学
-
-银行，票据交换所和处理商都参与支票清算的经济价值链。银行通常有单独的操作区域来处理支票存款处理和“内部清算”，即接收提交给银行以进行付款的支票的过程。这两个区域中的一个或两个都可以外包给处理商。
-
-银行或处理商有操作费用与接受或交付纸质支票有关；操作支票分类机；成像和存档支票；运行和维护将银行策略应用于各个项目的应用程序，以确定支票过帐时间，资金可用性和透支；和管理结算帐户的对帐。清算中心有确定结算总额和管理结算过程相关的费用。
-
-处理商和清算中心向使用其服务的银行收取交易费。许多银行都向较小的银行提供代理服务：较大的银行可以充当处理商并处理支票，收取交易费，但具有帐户分析因子（为了存在银行的余额给予较小的银行信贷）。
-
-### 捆绑支票和卡接受
-
-许多收卡行及其ISO将检查接受与卡片接受捆绑在一起，特别是对于中小型企业。就像收卡行会为零售商处理卡付款，然后将收益存入该零售商指定的银行帐户一样，它也会处理支票（通常通过远程存款捕获和/或ACH转换）。
-
-一般而言，银行和处理商对于支票退回和异常项目相关的收费相当高； 这些费用可能大大超过“普通”物品的费用。 银行使用“第2天处理”一词来表示付款银行接受或拒绝某项目后所产生的所有活动（退货，调整，报表制作，研究等）。
-
-对于各方而言，支票经济学的最后一个重要要素是欺诈和欺诈（及其他风险）管理的成本。
-
+Some large businesses use check printers to print checks internally, with the check printer receiving its data stream from the company's accounts payable and/or payroll systems. Others outsource the check printing process to a check printing service. This is particularly common in payroll applications, where the service manages various aspects of payroll processing (tax calculations, retirement benefits, etc.). Such services also manage the company's ACH wage payments.
 
 &nbsp;
 
-## 风险管理
+## Check Clearing and Infrastructure Economics
 
-支票欺诈的历史悠久而又丰富多彩。它分为许多类别，包括伪造的支票。在合法支票上伪造签名；更改的金额，日期或收款人；欺诈性背书；以及计划欺诈，例如支票工具。从技术上讲，在账户中写上资金不足的支票（称为NSF）虽然从技术上讲是欺诈行为，但通常被视为一种单独的风险敞口类别，因为支票书写者可能会或可能不会意识到资金不足的情况。
+Banks, clearinghouses, and processors all participate in the economic value chain of check clearing. Banks typically have separate operational areas for handling check deposit processing and "on-us clearing," the process of receiving checks submitted to the bank for payment. One or both of these areas may be outsourced to processors.
 
-### 资金不足（NSF）风险
+Banks or processors incur operational costs related to accepting or delivering paper checks; operating check sorting machines; imaging and archiving checks; running and maintaining applications that apply bank policies to individual items to determine check posting times, fund availability, and overdrafts; and managing reconciliation of settlement accounts. Clearinghouses have costs related to determining settlement totals and managing the settlement process.
 
-接受支票的收款人面临支票“拒付”的风险。如果支票发行人的银行因资金不足而支票支付，则从消费者那里收取款项的风险就会转移到银行（从NSF费用中获得的收入也将转移到消费者身上！）。退还已退回的支票时，存托银行将从其客户的帐户中扣除；如果该客户此后从帐户中提取了资金，则该银行将面临风险。收款人（或其银行）可以以纸质，图像形式或通过ACH交易形式出示退回的付款支票。如上所述，收款人，尤其是零售商，可以使用内部或外部数据库或服务来帮助管理此风险。收款人还可以选择购买支票验证或担保服务。
+Processors and clearinghouses charge transaction fees to banks using their services. Many banks provide correspondent services to smaller banks: larger banks may act as processors and handle checks, charging transaction fees but with an account analysis factor (providing smaller banks credit for balances held at the bank).
 
-零售商人，开票人和企业最容易遭受NSF风险。尽管尚无确切数字，但业界估计的年度损失在100亿美元左右。 NSF的银行损失没有披露，但损失要小得多。总体而言，鉴于从消费者那里收取的非常有利可图的NSF手续费收入，银行认为这些损失是可以接受的。
+### Bundling Check and Card Acceptance
 
-### 支票欺诈
+Many acquiring banks and their ISOs bundle check acceptance with card acceptance, especially for small to medium-sized businesses. Just as an acquiring bank processes card payments for a retailer and then deposits the proceeds into the retailer's designated bank account, it also handles checks (often through remote deposit capture and/or ACH conversion).
 
-如果在有效的帐户上伪造了支票，或者更改了有效的支票，而收款人接受了该支票并将其存入银行，那么有人将因欺诈而蒙受损失。支票开立银行有法定义务在“应付款”时​​付款。支票书写者与其他各方一样，有责任行使“常规照料”。 U.C.C.中的规定大量的判例法导致重大损失，这是由于法院或仲裁将欺诈行为分配给了交易的各方。确定暴露是复杂的，特别是考虑到向成像的过渡以及随后的监管并发症。实际上，与支票书写公司一样，商人（和开票人）最终也面临很多风险。据信，由于支票被退回造成的商户损失要比其他类型的支票欺诈造成的损失高得多。在美国，通常认为银行每年因支票欺诈所造成的损失少于10亿美元。
+In general, banks and processors charge relatively high fees for check returns and exception items; these fees can significantly exceed the cost of "normal" items. Banks use the term "second-day processing" to refer to all activities (returns, adjustments, report generation, research, etc.) that occur after a paying bank accepts or rejects an item.
 
-伪造的支票（包括伪造的出纳支票）从不存在的帐户中提取。此类支票由存款银行负责，然后由存款银行尝试从存款客户的帐户中提取资金。
-
-
-### 什么是浮盈？ （第2部分，共2部分）
-
-浮盈是支票系统经济学中不可或缺的一部分，也是业务中最容易被误解的术语之一！ 部分原因是该术语以多种方式使用。 概括而言，浮盈是指两方之间转移资金的可用性方面的差距。
-
-有时这是很具体的：“联邦储备浮动”是指作为支票清算行的美联储在从付款银行收取款项之前，将存入资金存入存款银行。 （从历史上看，美联储已经这样做，代表代办银行管理支票收支中的不确定性。）
-
-浮动通常更像是一种感知问题：“付款浮动汇率”是一个术语，用于描述公司邮寄支票（大概是将其义务卖给卖方）与支票实际出示给银行的时间之间的差距。
-
-浮动汇率通常是用相对的术语讨论的：如果银行在收款后平均1.5天内收集存入的支票，并且将其减少到平均1.25天，则浮动率得到了改善。 如果银行在收到有关支票的付款之前向存款客户提供了充足的资金，则将产生浮动费用-如果相关客户将余额留在帐户中，这可能是理论上的费用，而不是实际费用。
-
-困惑？ 关于浮动的一件事要记住。 图像清除以及相关产品和概念（ACH支票转换，远程存款捕获）正在极大地减少美国支票系统中浮动的数量和重要性。
-
-### 技术与检查欺诈
-
-当今的高分辨率扫描仪和打印机使在合法帐户上伪造支票变得更加容易。同样，在网上银行会议期间查看已付支票图像的能力也引起银行家的焦虑，因为伪造的凭证可能使欺诈者看到支票的“完美图像”，从而为伪造提供了模板。尽管存在这些问题，银行显然仍然能够控制支票伪造的总体水平。
+For all parties, the final important element of check economics is the cost of fraud and fraud (and other risk) management.
 
 &nbsp;
 
-## 风险管理产品
+## Risk Management
 
-为了帮助最大程度地减少欺诈行为，零售商购买了支票验证和担保产品（如上所述），以及访问外部数据库。银行购买类似的产品，以指导接受存款和兑现支票的决定；银行业在由预警服务管理的数据库上进行协作，该数据库提供了这些数据。银行处理器提供的软件可通过检查帐户内和帐户间的交易模式来帮助识别欺诈性交易。 （使用类似的软件来检测违反洗钱法规的交易。）银行和零售商使用广泛的产品和服务来检测伪造的支票，识别欺诈性签名等。
+Check fraud has a long and colorful history. It is divided into many categories, including forged checks. Forged signatures on legitimate checks; altered amounts, dates, or payees; fraudulent endorsements; and planned fraud, such as check kiting. Technically, writing a check with insufficient funds in the account (known as NSF) is considered a separate risk exposure category, as the check writer may or may not be aware of the insufficient funds.
+
+### Insufficient Funds (NSF) Risk
+
+Recipients of checks face the risk of check "bouncing." If the check issuer's bank pays the check due to insufficient funds, the risk of collecting the funds from the consumer shifts to the bank (income from NSF fees will also shift to the consumer!). When returned checks are returned, the depositary bank deducts from its customer's account; if that customer subsequently withdraws funds from the account, the bank faces risk. Recipients (or their banks) can present returned payment checks in paper, image form, or through ACH transactions. As mentioned above, recipients, especially retailers, can use internal or external databases or services to help manage this risk. Recipients can also choose to purchase check verification or guarantee services.
+
+Retailers, issuers, and businesses are most vulnerable to NSF risk. While exact figures are not available, industry estimates annual losses around $10 billion. Bank losses from NSF are not disclosed but are much smaller. Overall, given the highly profitable NSF fee income collected from consumers, banks consider these losses acceptable.
+
+### Check Fraud
+
+If a check is forged on a valid account, or a valid check is altered, and the recipient accepts and deposits the check into the bank, someone will suffer a loss due to fraud. The drawee bank has a legal obligation to pay when "due." Check writers, like other parties, have a duty to exercise "ordinary care." The U.C.C. provisions and a large body of case law lead to significant losses, as courts or arbitrators assign fraud to the parties to the transaction. Determining liability is complex, especially considering the transition to imaging and subsequent regulatory and compliance issues. In practice, merchants (and issuers) face many risks as check writers, with losses from returned checks believed to be much higher than losses from other types of check fraud. In the United States, bank losses from check fraud are generally considered to be less than $1 billion annually.
+
+Counterfeit checks (including counterfeit cashier's checks) are drawn on non-existent accounts. Such checks are the responsibility of the depositary bank, which then attempts to draw funds from the deposit customer's account.
+
+### What is Float? (Part 2 of 2)
+
+Float is an essential part of the economics of the check system and one of the most easily misunderstood terms in business! Part of the reason is that the term is used in multiple ways. In general, float refers to the availability aspect of transferring funds between two parties.
+
+Sometimes this is very specific: "Federal Reserve float" refers to the practice of the Fed, as a check clearinghouse, depositing funds into the depositary bank before collecting payment from the paying bank. (Historically, the Fed has done this on behalf of correspondent banks to manage the uncertainty of check inflows and outflows.)
+
+Float is often more of a perceptual issue: "Payment float rate" is a term used to describe the difference between the time a company mails a check (essentially selling its obligation to the payee) and when the check is actually presented to the bank.
+
+Float rates are typically discussed in relative terms: if a bank collects deposited checks within an average of 1.5 days after receipt and reduces it to an average of 1.25 days, the float rate has improved. Float costs can be incurred if the bank provides sufficient funds to the deposit customer before receiving payment on the check - theoretically a cost if the relevant customer leaves the balance in the account rather than an actual cost.
+
+Confused? One thing to remember about float. Image clearing and related products and concepts (ACH check conversion, remote deposit capture) are significantly reducing the amount and importance of float in the U.S. check system.
+
+### Technology and Check Fraud
+
+Today's high-resolution scanners and printers make counterfeiting checks on legitimate accounts easier. Similarly, the ability to view images of paid checks during online banking sessions has raised concerns among bankers, as counterfeiters could see the "perfect image" of a check, providing a template for counterfeiting. Despite these issues, banks appear to still be able to control the overall level of check counterfeiting.
 
 &nbsp;
 
-## 主要供应商
+## Risk Management Products
 
-### 美联储银行
+To help minimize fraudulent activities, retailers purchase check verification and guarantee products (as mentioned above), as well as access external databases. Banks purchase similar products to guide decisions on accepting deposits and cashing checks; the banking industry collaborates on databases managed by alert services that provide this data. Software provided by bank processors helps identify fraudulent transactions by examining transaction patterns within and between accounts. (Similar software is used to detect transactions that violate anti-money laundering regulations.) Banks and retailers use a wide range of products and services to detect counterfeit checks, identify fraudulent signatures, and more.
 
-美联储委员会和美联储银行（统称为“美联储”）在支票行业中具有独特的地位。 “美联储”扮演三个角色：
+&nbsp;
 
-  * 作为支付行业的监管者，它编写了规则来管理跨多个支付系统的银行和其他方的行为。
-  * 作为支付服务的提供者，它运营着该国最大的支票和支票图像交换所。 （它还操作两个ACH交换机之一和两个电汇系统之一（Fedwire），并且是向银行提供现金和货币的唯一提供商。）美联储仅向银行出售这些服务。
-  * 作为国家结算服务的经理，它为多个私营部门的清算中心（包括纸质和电子结算所）提供结算服务。
+## Major Suppliers
 
-### 美联储行动
+### Federal Reserve Banks
 
-美联储采取了两项平行行动，以鼓励该行业转向图像清除。它赞助并拥护最终通过“ Check 21”的法律。但它也宣布了一系列决定，以关闭全国各地银行使用的本地支票处理（清算中心）设施。这意味着银行必须以更大的成本向更远的地方发送纸质支票，这使它们更加渴望实施图像清除。
+The Federal Reserve Board and the Federal Reserve Banks (collectively known as the "Fed") hold a unique position in the check industry. The "Fed" plays three roles:
 
-### 清算中心
+  * As regulators of the payment industry, they write rules to govern the behavior of banks and other parties across multiple payment systems.
+  * As providers of payment services, they operate the country's largest check and check image exchange. (They also operate one of the two ACH switches and one of the two wire transfer systems (Fedwire), and are the sole provider of cash and currency to banks.) The Fed sells these services exclusively to banks.
+  * As managers of national settlement services, they provide settlement services to clearinghouses for multiple private-sector clearing centers (including paper and electronic clearinghouses).
 
-清算中心是一家银行所有的支付公司，在银行业中是安静的力量。它最初成立于1853年，是纽约清算中心（用于支票清算），它与其他清算中心和支付公司进行了一系列合并，并通过建立新的支付服务来为其成员银行提供服务而发展壮大。如今，它已由二十四家大型银行（美国银行和国际银行在美国的分支机构）拥有。它是美联储向银行提供支付服务的主要竞争对手，这些服务包括提供支票和图像清算，ACH处理（该国是该国的另一家ACH运营商），以及通过CHIPS进行电汇处理。
+### Fed Actions
 
-### 摘要：支票
+The Fed took two parallel actions to encourage the industry to move towards image clearing. They sponsored and endorsed the Check 21 Act. But they also announced a series of decisions to close local check processing (clearinghouse) facilities used by banks nationwide. This means banks must send paper checks to more distant locations at greater cost, making them more eager to implement image clearing.
 
-长期以来，支票在美国占主导地位的非现金支付系统正在下降。但是，支票清算实践的根本变化已经改变了系统的经济性。
+### Clearinghouses
 
-### 支票的主要趋势
+Clearinghouses are the quiet powerhouses of the banking industry. Originally established in 1853, the New York Clearing House (for check clearing) was the first clearinghouse, which merged with other clearinghouses and payment companies, expanding and developing by establishing new payment services to serve its member banks. Today, it is owned by twenty-four large banks (branches of U.S. and international banks in the U.S.). It is a major competitor to the Fed in providing payment services to banks, including check and image clearing, ACH processing (another ACH operator in the country), and wire transfer processing through CHIPS.
 
-  * 支票的数量仍然很大，但总体上下降了，在POS和帐单支付领域尤为明显。
-  * 图像清算和支票到ACH的转换已大大改变了银行的清算习惯和处理支票的单位成本。
-  * 自动柜员机，分支机构和终端用户进行的远程图像捕获降低了支票接受的成本，并降低了浮动和风险。 
-  * 工作组正在研究“全电子支票”（一个可能的术语-EPO或电子付款单），一种以支票图像开头的工具。
+### Summary: Checks
 
+Checks have long dominated the non-cash payment system in the U.S. However, fundamental changes in check clearing practices have altered the economics of the system.
 
-### 信息来源 - 支票
+### Key Trends in Checks
+
+  * The volume of checks remains significant but has declined overall, particularly in POS and bill payment areas.
+  * Image clearing and the conversion of checks to ACH have significantly changed bank clearing practices and the unit cost of processing checks.
+  * Remote image capture by ATMs, branches, and end-users has reduced the cost of check acceptance and lowered float and risk.
+  * Workgroups are exploring "fully electronic checks" (a possible term - EPO or electronic payment order), a tool that begins with check images.
+
+### Information Sources - Checks
   * PaymentsNews.com
   * ECCHO
-  * 清算中心
-  * 美联储零售付款办公室个人美联储
-  * 金融服务技术联盟
-  * 银行行政学院（BAI）
+  * Clearinghouses
+  * Federal Reserve Retail Payments Office personal Federal Reserve
+  * Financial Services Technology Alliance
+  * Bank Administration Institute (BAI)

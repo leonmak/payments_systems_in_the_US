@@ -1,16 +1,15 @@
-# 介绍
+# Introduction
 
-支付是我们生活的一个大的组成部分。 我们为我们想要的和需要的东西进行支付。 我们为了零钱而摸索钱包或口袋，我们在钱包中翻遍我们的卡只为了找到正确的一张来购买东西。 我们写下支票或在线上付账单。 我们购买礼品卡和计划偿还房贷。 我们在网上或手机上购物，并使用多样的卡和钱包付款。 我们打钱给亲朋好友。 我们为了大额支付的资金来源发愁，我们试着找到正确的支付方式。 大家的需求都不一样。 对一部分人来说， 方便最重要， 对另一部分来说，可能掌控，或有奖励，或跟随父母教导的方式，决定怎样和为什么我们要进行支付。
+Payments are a big part of our lives. We pay for things we want and need. We fumble through our wallets or pockets for change, we rummage through our cards in our wallets just to find the right one to make a purchase. We write checks or pay bills online. We buy gift cards and plan to pay off mortgages. We shop online or on our phones, using a variety of cards and wallets for payment. We send money to family and friends. We worry about where to get the funds for large payments, trying to find the right payment method. Everyone's needs are different. For some, convenience is most important, for others, control, rewards, or following the way their parents taught them, deciding how and why we make payments.
 
-作为商业人士，我们也会进行商业支付：对员工，对供应商，对政府。 我们也会为了商业活动而收款： 从消费者或从贸易。
+As business people, we also make business payments: to employees, to suppliers, to the government. We also receive payments for business activities: from consumers or from trade.
 
-这些活动是我们个人和商业生活的中心。 对一部分人来说，它们也是为我们生计提供燃料的服务。 在这些简单支付交易下是整个支付行业的系统，产品，公司。
+These activities are at the center of our personal and business lives. For some, they also provide the fuel for our livelihoods. Beneath these simple payment transactions is the entire payment industry's system, products, companies.
 
-这本书是为支付专家而写。 支付专家为那些提供支付交易的公司工作。 这当然包括银行，但也包括其他类型的公司: processors, payments services, 软件公司， POS机制造商， 服务提供者， 风险管控者等。 某些公司占统治地位，其他的是竞争者： 为行业引入创新的初创公司。 大部分会失败或停滞，但少部分会成功，成为统治者并担心的等待着下一轮的挑战者。 其他的支付专家在企业中负责收发款项。 还有一些则成为咨询，顾问，律师，行业投资者。
+This book is written for payment experts. Payment experts work for companies that provide payment transactions. This certainly includes banks, but also other types of companies: processors, payment services, software companies, POS manufacturers, service providers, risk controllers, etc. Some companies dominate, others are competitors: startups that introduce innovation to the industry. Most will fail or stagnate, but a few will succeed, become dominators, and await the next round of challengers. Other payment experts are responsible for sending and receiving funds within companies. Some become consultants, advisors, lawyers, industry investors.
 
-和很多行业一样，专家们挣扎着跟上整体环境，技术，消费者和商家等用户的支付习惯上的改变。 某些专家精通一种支付系统（卡，或ACH），其他的则是一种功能比如消费者市场或风险管理。 本书提供整个美国支付行业的综合性视野，包括所有的支付系统和功能。
+Like many industries, experts struggle to keep up with changes in the overall environment, technology, consumer and merchant payment habits. Some experts specialize in a payment system (cards, or ACH), while others focus on a specific function such as the consumer market or risk management. This book provides a comprehensive view of the entire U.S. payment industry, including all payment systems and functions.
 
-本书不是支付行业的统计数据源。 市面上有许多行业数据源： 在每一章的末尾我们会提供一些能对某个支付系统或话题提供更多信息的资料来源。
+This book is not a source of statistical data for the payment industry. There are many industry data sources available: at the end of each chapter, we will provide some references that can provide more information on a specific payment system or topic.
 
-我们会尽量不偏不倚， 主管意见，推测，传闻 are set in shaded boxes。 我们非常欢迎您的问题和评论。 给我们发邮件：books@glenbrook.com，我们将会回应！
-
+We will strive to be impartial, and opinions, speculations, rumors are set in shaded boxes. We welcome your questions and comments. Email us at books@glenbrook.com, and we will respond!
